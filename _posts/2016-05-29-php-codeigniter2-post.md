@@ -98,6 +98,7 @@ Controller는 News 클래스의 latest 메소드를 호출하고 인자 값으�
 
 ### 1. Controller 폴더 안에 news.php 파일 생성하기
 application 폴더 안에 있는 Controller 폴더에 News.php 파일을 만든다.
+
 ```php
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
@@ -108,6 +109,7 @@ class News extends CI_Controller {
 	}
 }
 ```
+
 index 부분은 http://example.com/News 라고 입력했을 때 실행되는 부분이다.
 
 ### 2. 파라메터가 있는 latest 함수 만들기
@@ -126,6 +128,7 @@ class News extends CI_Controller {
 	}
 ?>
 ```
+
 http://example.com/news/latest/10이라고 입력했을 땐 페이지에 10이 출력되고
 http://example.com/news/latest/5라고 입력했을 땐 페이지에 5가 출력되는 것을 확인할 수 있다.
 
