@@ -40,6 +40,8 @@ mv composer.phar /usr/local/bin/composer
 
  ![image](../assets/img/post_images/post_php_composer_1.png)
 
+
+
  ### Packagist
 
  Packgist는 Composer에서 제공하는 패키지 리스트이다. 
