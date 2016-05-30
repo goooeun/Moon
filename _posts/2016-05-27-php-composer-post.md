@@ -70,15 +70,15 @@ composer install
 
 #### 5.PHP 파일에서 사용하는 예제
 ```php
- <?php
- 	require 'vendor/autoload.php';
- 	use dflydev\markdown\MarkdownParser;
- 	$markdownParser = new MarkdownParser();
- 	echo $markdownParser->transformMarkdown("#Hello World");
- ?>
- ```
+<?php
+	require 'vendor/autoload.php';
+	use dflydev\markdown\MarkdownParser;
+	$markdownParser = new MarkdownParser();
+	echo $markdownParser->transformMarkdown("#Hello World");
+?>
+```
 
-require에서 사용하는 패키지를 하나하나 쓸 필요 없이 autoload해주면 알아서 패키지를 가져와준다.
+* require에서 사용하는 패키지를 하나하나 쓸 필요 없이 autoload해주면 알아서 패키지를 가져와준다.
 
 
  ### 참고
