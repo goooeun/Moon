@@ -42,10 +42,10 @@ mv composer.phar /usr/local/bin/composer
 
 
 
- ### Packagist
+### Packagist
 
- Packgist는 Composer에서 제공하는 패키지 리스트이다. 
- 많이 쓰이는 Markdown 패키지를 사용해보자!
+Packgist는 Composer에서 제공하는 패키지 리스트이다. 
+많이 쓰이는 Markdown 패키지를 사용해보자!
 
 #### 1.https://packagist.org/packages/dflydev/markdown에서 최신 버전의 markdown을 설치한다.
 
