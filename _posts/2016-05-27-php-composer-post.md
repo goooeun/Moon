@@ -1,4 +1,4 @@
-—
+—--
 layout: post
 title:  "[PHP] Composer : 패키지 간의 의존성 관리"
 date:   2016-05-27
@@ -8,7 +8,7 @@ tag:
 - packagist
 - markdown
 comments: true
-—
+—--
 
 ## Composer(패키지 간 의존성 관리자)
 
