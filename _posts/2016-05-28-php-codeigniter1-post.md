@@ -23,7 +23,7 @@ CI(CodeIgniter)는 PHP 프레임워크 중 많이 알려진 프레임워크이�
 CI 설치하기 위해서는 웹 서버(Apache, Nginx..)와 PHP, MySQL(or Oracle)이 필요하다.
 웹 서버 구축 후 CI를 설치하도록 하자!
 
-	#### 1. CI 다운로드
+	#### 1.CI 다운로드
 	직접 프로젝트 폴더에 다운받고 싶을 땐 http://www.codeigniter.com/download에 접속해서 다운로드 해주면 된다.
 	현재 최신버전은 3.0.6 버전이다. (2016년 5월 28일 기준)
 	리눅스에서 직접 다운 받을 땐 다음 명령어를 입력해주면된다.
@@ -36,7 +36,7 @@ CI 설치하기 위해서는 웹 서버(Apache, Nginx..)와 PHP, MySQL(or Oracle
 
 	그러면 CodeIgniter-3.0.6 폴더가 생성된다.
 
-	#### 2. 폴더 경로 바꿔주기
+	#### 2.폴더 경로 바꿔주기
 	폴더 안의 내용을 /var/www으로 옮겨주고 폴더를 지워주면 CI 내용을 사용할 때 폴더경로가 좀 더 간단해진다.
 	```bash
 	mv CodeIgniter_3.0.6/* .	// CodeIgniter_3.0.6 폴더 안에 있는 모든 파일을 현재 디렉토리로 옮긴다.
