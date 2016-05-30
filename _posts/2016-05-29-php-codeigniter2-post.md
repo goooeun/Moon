@@ -31,9 +31,9 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 
 	1. base_url 수정 
 		처음 설치 후엔 base_url이 설정되지 않은 상태이므로 applcation/config/config.php에서 base_url부분을 자신이 사용하는 웹서버 url로 수정해주어야한다.
-		```bash
+		{% highlight bash %}
 		$config['base_url'] = '사용할 웹 서버 url';
-		```
+		{% endhighlight %}
 
 	2. index.php url에서 숨기기
 		처음엔 url로 controller의 클래스에 접근할때 http://example.com/index.php/접근할클래스 라는 식으로 index.php을 입력해줘야한다.
