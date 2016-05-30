@@ -37,7 +37,8 @@ unzip 3.0.6.zip
 그러면 CodeIgniter-3.0.6 폴더가 생성된다.
 
 #### -폴더 경로 바꿔주기
-폴더 안의 내용을 /var/www으로 옮겨주고 폴더를 지워주면 CI 내용을 사용할 때 폴더경로가 좀 더 간단해진다.
+폴더 안의 내용을 /var/www/html으로 옮겨주고 폴더를 지워주면 CI 내용을 사용할 때 폴더경로가 좀 더 간단해진다.
+
 ```bash
 mv CodeIgniter_3.0.6/* .	// CodeIgniter_3.0.6 폴더 안에 있는 모든 파일을 현재 디렉토리로 옮긴다.
 rm -r CodeIgniter_3.0.6
