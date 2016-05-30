@@ -31,7 +31,6 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 
 	1. base_url 수정 
 		처음 설치 후엔 base_url이 설정되지 않은 상태이므로 applcation/config/config.php에서 base_url부분을 자신이 사용하는 웹서버 url로 수정해주어야한다.
-
 		{% highlight bash %}
 		$config['base_url'] = '사용할 웹 서버 url';
 		{% endhighlight %}
@@ -41,14 +40,12 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 		하지만 url이 길어지는 건 비효율적이기 때문에 저 부분을 없애는 것이 좋다.
 	
 		1.rewrite module 활성화
-
 			{% highlight bash %}
 			sudo a2enmod rewrite
 			sudo service apache2 restart
 			{% endhighlight %}
 
 		2./etc/apache2에서 apache2.conf 수정 
-
 			{% highlight bash %}
 			<Directory /var/www/html/>
 				Options Indexes FollowSymLinks
@@ -58,20 +55,17 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 			{% endhighlight %}
 
 		3.아파치를 재시작해준다.
-
 			{% highlight bash %}
 			apachectl restart
 			{% endhighlight %}
 
 		4.applicatoin/config/config.php 파일 내용을 수정해준다.
-
 			{% highlight bash %}
 			$config['index_page'] = 'index.php';
 			-> $config['index_page'] = '';
 			{% endhighlight %}
 
 		5..htaccess 파일을 만들고 다음 내용을 넣어준다.
-
 			{% highlight bash %}
 			<IfModule mod_rewrite.c>
 			    RewriteEngine On
@@ -84,7 +78,6 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 			{% endhighlight %}
 
 		6..httaccess 파일의 권한을 변경해준다.
-		
 			{% highlight bash %}
 			chmod 755 .httaccess
 			{% endhighlight %}
