@@ -52,19 +52,19 @@ Packgist는 Composer에서 제공하는 패키지 리스트이다.
 #### 2.개발중인 프로젝트의 최상위 directory에 composer.json 파일을 생성한다.
 
 #### 3.composer.json에 아래의 코드를 복사, 붙여넣기 한다.
- ```json
-  {
-  	 "require" : {
-  		 "dflydev/markdown" : "1.0.3"
-  	 }
-  }
- ```
-json 형식에 맞추어 "패키지 이름" : "버전" 순으로 작성해준다
+```json
+{
+  	"require" : {
+  		"dflydev/markdown" : "1.0.3"
+  	}
+}
+```
+* json 형식에 맞추어 "패키지 이름" : "버전" 순으로 작성해준다
 
 #### 4.composer.json이 있는 directory에서 해당 명령어를 입력한다.
- ```bash
- composer install
- ```
+```bash
+composer install
+```
 
 * vendor라는 폴더가 생성되고 composer.json에 적어준 패키지가 vendor 폴더에 설치된다.
 
