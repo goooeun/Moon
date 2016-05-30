@@ -48,7 +48,9 @@ mv composer.phar /usr/local/bin/composer
  많이 쓰이는 Markdown 패키지를 사용해보자!
 
 #### 1.https://packagist.org/packages/dflydev/markdown에서 최신 버전의 markdown을 설치한다.
+
 #### 2.개발중인 프로젝트의 최상위 directory에 composer.json 파일을 생성한다.
+
 #### 3.composer.json에 아래의 코드를 복사, 붙여넣기 한다.
  ```json
   {
@@ -59,14 +61,14 @@ mv composer.phar /usr/local/bin/composer
  ```
 json 형식에 맞추어 "패키지 이름" : "버전" 순으로 작성해준다
 
-#### 3.composer.json이 있는 directory에서 해당 명령어를 입력한다.
+#### 4.composer.json이 있는 directory에서 해당 명령어를 입력한다.
  ```bash
  composer install
  ```
 
 * vendor라는 폴더가 생성되고 composer.json에 적어준 패키지가 vendor 폴더에 설치된다.
 
-#### 4.PHP 파일에서 사용하는 예제
+#### 5.PHP 파일에서 사용하는 예제
 ```php
  <?php
  	require 'vendor/autoload.php';
