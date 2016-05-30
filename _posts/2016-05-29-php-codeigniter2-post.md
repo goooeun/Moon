@@ -75,11 +75,11 @@ http://www.ciboard.co.kr/user_guide/kr/general/urls.html
 		```
 		<IfModule mod_rewrite.c>
 		    RewriteEngine On
-		 RewriteBase /
-		 RewriteCond $1 !^(index\.php|images|captcha|data|include|uploads|robots\.txt)
-		 RewriteCond %{REQUEST_FILENAME} !-f
-		 RewriteCond %{REQUEST_FILENAME} !-d
-		 RewriteRule ^(.*)$ /index.php/$1 [L]
+			 RewriteBase /
+			 RewriteCond $1 !^(index\.php|images|captcha|data|include|uploads|robots\.txt)
+			 RewriteCond %{REQUEST_FILENAME} !-f
+			 RewriteCond %{REQUEST_FILENAME} !-d
+			 RewriteRule ^(.*)$ /index.php/$1 [L]
 		</IfModule>
 		```
 
