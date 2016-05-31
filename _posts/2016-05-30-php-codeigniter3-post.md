@@ -52,8 +52,9 @@ class Model_name extends CI_Model {		// CI_Model을 상속받는 Model_name 클�
 ``` 
 
 * __construct에 함수 내에서 반복적으로 사용되는 부분을 넣어주면 좋다.
+
 ```php
-ex) $this->load->database(); 
+ex)$this->load->database(); 
 ```
 
 ### 3.Controller에서 Model 사용하기
@@ -86,6 +87,7 @@ class Model_name extends CI_Model {
 
 #### -Active Record 방식
 정보의 추출,삽입, 업데이트를 최소한의 코드로 수행할 수 있게 도와주는 방식이다.
+
 ```php
 $this->db->get('테이블 이름', $limit, $offset);	// "SELECT * FROM 테이블 이름 LIMIT offset, limit"
 $this->db->get_where('테이블 이름',array('id'->$id), $limit, $offset);	// "SELECT * FROM 테이블 이름 WHERE id = $id LIMIT offset, limit"
