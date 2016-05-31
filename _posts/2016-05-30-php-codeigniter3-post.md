@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "[PHP] CodeIgniter(코드 이그나이터) Controller와 View"
+title:  "[PHP] CodeIgniter(코드 이그나이터) Model"
 date:   2016-05-30
 tag:
 - PHP
