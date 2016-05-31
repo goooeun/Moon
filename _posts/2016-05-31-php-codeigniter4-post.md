@@ -15,6 +15,7 @@ comments: true
 
 ### -자동 연결
 /application/config/autoload.php 파일 수정
+
 ```php
 $autoload['libraries']=array('');
 ->$autoload['libraries']=array('database');
@@ -22,6 +23,7 @@ $autoload['libraries']=array('');
 
 ### -수동 연결
 데이터베이스 사용시마다 호출
+
 ```php
 $this->load->database();
 ```
@@ -54,8 +56,10 @@ $sql = "SELECT * FROM table_name WHERE id = ? AND name = ?";
 $this->db->query($sql,array(3,'goeun'));		// SELECT * FROM table_name WHERE id = 3 AND name = 'goeun';
 ```
 
-### -에러 랜들링
-$this->db->error();						// 코드와 메시지를 포함한 배열로 
+### -에러 핸들링
+```php
+$this->db->error();						// 코드와 메시지를 포함한 배열로 반환
+```
 
 ## 3. 쿼리 결과 생성
 
@@ -63,6 +67,7 @@ $this->db->error();						// 코드와 메시지를 포함한 배열로
 
 #### 1.result() : 객체로 리턴
 foreach 사용
+
 ```php
 foreach($query->result() as $entry) {
 	echo $entry->id;
@@ -72,6 +77,7 @@ foreach($query->result() as $entry) {
 
 #### 2.result_array() : 배열로 리턴
 foreach 사용
+
 ```php
 foreach($query->result() as $entry) {
 	echo #entry['id'];
@@ -101,7 +107,7 @@ $row = $query->previous_row();			// 이전 레코드로 이동
 
 #### -num_rows() : 쿼리 결과열의 개수를 리턴
 
-#### -$this->db->affected_rows() : insert, update 등에서 쿼리 수행시 적용된 결과 열 수를 리ㅓㄴ
+#### -$this->db->affected_rows() : insert, update 등에서 쿼리 수행시 적용된 결과 열 수를 리턴
 
 ## 5.쿼리 빌더 클래스 (액티브 레코드)
 
@@ -134,12 +140,12 @@ $query = $this->db->get();
 
 #### 1.LIKE
 여러 개를 나열하면 AND로 연결되고 OR로 연결하고 싶을 땐 or_like()를 써준다.
+
 ```php
 $this->db->like('name','match');				// LIKE '%match%'
 $this->db->like('name','match','before');		// LIKE '%match'
 $this->db->like('name','match','after');		// LIKE 'match%'
 $this->db->like('name','match','both');			// LIKE '%match%'
-
 // 연관 배열로 사용
 $array = array('name'=>$match,'title'=>$match);
 $this->db->like($array);
@@ -159,16 +165,17 @@ $this->db->get('table_name');
 
 #### 4.HAVING
 여러 개를 나열하면 AND로 연결되고 OR로 연결하고 싶을 땐 or_having()를 써준다.
+
 ```php
 $this->db->having('user_id = 45');  
 $this->db->having('user_id',  45);				// 둘 다 사용 가능
-
 // 배열 사용시
 $this->db->having(array('title =' => 'My Title', 'id <' => $id));	
 ```
 
 #### 5.ORDER BY
 정렬 방향은 ASC, DESC, RANDOM이 있다.
+
 ```php
 $this->db->order_by('title', '정렬 방향');
 $this->db->order_by('title 정렬 방향, name 정렬 방향');
@@ -244,6 +251,7 @@ $this->db->replace('table', $data);
 
 #### 2.set()
 insert, update 시 데이터 배열을 사용하는 방법 대신 사용, 객체와 배열 모두 사용 가능하다.
+
 ```php
 $this->db->set('name', $name);
 $this->db->insert('mytable');
@@ -253,11 +261,11 @@ $this->db->insert('mytable');
 
 #### 3.update()
 배열과 객체 모두 사용가능하다.
+
 ```php
 // 배열 사용
 $this->db->where('id', $id);
 $this->db->update('mytable', $data);
-
 // 객체 사용
 $object = new Myclass;
 $this->db->where('id', $id);
@@ -266,6 +274,7 @@ $this->db->update('mytable', $object);
 
 ### 4.update()시 where 사용
 where 조건을 사용하고 싶을 땐 세번째 파라미터로 값을 전달해주면 된다.
+
 ```php
 $this->db->update('mytable', $data, "id = 4"); 				// 객체 사용
 $this->db->update('mytable', $data, array('id' => $id)); 	// 배열 사용
