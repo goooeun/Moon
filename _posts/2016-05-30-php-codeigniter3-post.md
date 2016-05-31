@@ -88,7 +88,6 @@ class Model_name extends CI_Model {
 ```php
 $this->db->get('테이블 이름', $limit, $offset);	// "SELECT * FROM 테이블 이름 LIMIT offset, limit"
 ```
-
 ```php
 $this->db->get_where('테이블 이름',array('id'->$id), $limit, $offset);	// "SELECT * FROM 테이블 이름 WHERE id = $id LIMIT offset, limit"
 ```
