@@ -37,6 +37,7 @@ $db['default'] = array(
 
 ### 2.Model의 기본 프로토타입
 모델 파일을 생성해준다.
+
 ```php
 <?php
 class Model_name extends CI_Model {		// CI_Model을 상속받는 Model_name 클래스
@@ -64,6 +65,7 @@ $this->load->model('Model_name')->Model의 메소드();
 ```
 
 ### 4.Model에서 쿼리문 사용하기
+
 #### -일반적인 쿼리 사용법
 ```php
 <?php
@@ -92,6 +94,7 @@ $this->db->get_where('테이블 이름',array('id'->$id), $limit, $offset);	// "
 ```
 
 ### 5.View에서 데이터 출력하기
+
 #### -controller에서 view로 값을 보낸다.
 ```php
 $data = $this->Model_name->method();			// method의 결과를 $data에 저장
