@@ -26,6 +26,7 @@ Model은 주로 데이터베이스와 연동하기 위해 사용된다.
 ### 1.데이터베이스 생성
 자신이 사용하는 데이터베이스(ex. MySQL, Oracle..)를 사용하여 데이터베이스를 생성해준다.
 생성 후 application/config/ 폴더의 database.php 파일을 수정해준다.
+
 ```php
 $db['default'] = array(
 	'hostname' => '서버 주소',
