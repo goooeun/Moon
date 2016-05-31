@@ -285,3 +285,6 @@ $this->db->update('mytable', $data, array('id' => $id)); 	// 배열 사용
 $this->db->delete('mytable', array('id' => $id)); 			// 두 번째 파라미터는 where절
 $this->db->empty_table('mytable');							// 테이블의 모든 데이터 삭제
 ```
+
+### 참고
+> http://codeigniter-kr.org CodeIgniter 한국 사용자 포럼
