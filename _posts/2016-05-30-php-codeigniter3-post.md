@@ -28,13 +28,11 @@ Model은 주로 데이터베이스와 연동하기 위해 사용된다.
 생성 후 application/config/ 폴더의 database.php 파일을 수정해준다.
 ```php
 $db['default'] = array(
-	...
 	'hostname' => '서버 주소',
 	'username' => '데이터베이스의 사용자 이름',
 	'password' => '사용자 비밀번호',
 	'database' => '데이터베이스명',
 	'dbdriver' => '자신이 사용하는 데이터베이스(ex. MySQL, Oracle)',
-	...
 ```
 
 ### 2. Model의 기본 프로토타입
