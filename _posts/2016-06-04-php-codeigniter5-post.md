@@ -51,25 +51,45 @@ Libraries가 객체지향인 클래스로 이루어졌다면 Helper는 독립적
 ### 1.CI가 제공하는 Helper
 
 #### -배열(Array Helper)
+
 #### -캡챠(CAPTCHA Helper)
+
 #### -쿠키(Cookie Helper)
+
 #### -날짜(Date Helper)
+
 #### -디렉토리(Directory Helper)
+
 #### -다운로드(Download Helper)
+
 #### -이메일(Email Helper)
+
 #### -파일(File Helper)
+
 #### -폼(Form Helper)
+
 #### -HTML Helper
+
 #### -인플렉터(Inflector Helper)
+
 #### -언어(Language Helper)
+
 #### -숫자(Number Helper)
+
 #### -경로(Path Helper)
+
 #### -보안(Security Helper)
+
 #### -스마일리(Smiley Helper)
+
 #### -문자열(String Helper)
+
 #### -텍스트(Text Helper)
+
 #### -타이포그라피(Typography Helper)
+
 #### -URL Helper
+
 #### -XML Helper
 
 ### 2.Helper 로드하기
@@ -93,4 +113,5 @@ application/helper폴더에 파일을 생성한 뒤 함수를 넣어주고 사�
 
 ### 참고
 > http://www.opentutorials.org/course/697/3838 생활코딩 URL Routing
+
 > http://www.opentutorials.org/course/697/3836 생활코딩 Helper
