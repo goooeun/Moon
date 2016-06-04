@@ -49,6 +49,7 @@ CI에는 Helper와 Libraries가 둘다 존재하는데 이 둘은 약간의 차�
 Libraries가 객체지향인 클래스로 이루어졌다면 Helper는 독립적인 함수로만 이루어졌다.
 
 ### 1.CI가 제공하는 Helper
+
 #### -배열(Array Helper)
 #### -캡챠(CAPTCHA Helper)
 #### -쿠키(Cookie Helper)
@@ -72,6 +73,7 @@ Libraries가 객체지향인 클래스로 이루어졌다면 Helper는 독립적
 #### -XML Helper
 
 ### 2.Helper 로드하기
+
 #### 1.직접 로드하기
 ```bash
 $this->load->helper('사용할 헬퍼 이름');
