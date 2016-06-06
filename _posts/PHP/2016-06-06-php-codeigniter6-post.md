@@ -65,3 +65,6 @@ $this->config->item('사용할 config');		// 설정 정보가 리턴되며 값�
 ```
 
 *Model, View, Controller 모두에서 사용 가능하다.
+
+### 참고
+> http://www.opentutorials.org/course/697/3834 생활코딩
