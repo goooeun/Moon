@@ -50,13 +50,13 @@ $_SERVER['CI_ENV']는 .htaccess이나 아파치의 경우 SetEnv를 사용해서
 
 ### 4.config.php 파일 해설
 ```php
-$config['language']    = 'english';		// 언어를 설정
+$config['language']    = 'english';			// 언어를 설정
 $config['enable_hooks'] = FALSE;		// hook 기능을 활성화
 $config['subclass_prefix'] = 'MY_';		// Core 클래스를 상속 받아 커스터마이징 할 때 클래스 이름의 약속된 접두사를 변경
-$config['log_threshold'] = 0;		// 로그 상태 변경 
+$config['log_threshold'] = 0;					// 로그 상태 변경 
 									// 0: 로깅 하지 않는다  1: 에러만 출력  2: Debug Message  3: Informaion Message  4: 모든 메세지
-$config['log_path'] = '';		// 로그 파일을 저장 위치 지정
-$config['cache_path'] = '';		// 캐쉬 파일을 저장 위치 지정
+$config['log_path'] = '';				// 로그 파일을 저장 위치 지정
+$config['cache_path'] = '';				// 캐쉬 파일을 저장 위치 지정
 ```
 
 ### 5.설정 정보의 사용
