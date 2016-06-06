@@ -70,23 +70,30 @@ $this->config->item('사용할 config');		// 설정 정보가 리턴되며 값�
 
 ### 1.로깅 시작
 로그를 사용하고 싶다면 application/config/config.php 파일의 내용 수정
+
 ```php
 $config['log_threshold'] = 0;
 ```
 
 숫자를 변경하여 로깅 상태를 변경할 수 있다.
 
-*0: 로깅 하지 않는다  1: 에러만 출력  2: Debug Message  3: Informaion Message  4: 모든 메세지
+#### -0: 로깅 하지 않는다  
+#### -1: 에러만 출력  
+#### -2: Debug Message  
+#### -3: Informaion Message  
+#### -4: 모든 메세지
 
 로그를 실행시킨 뒤 프로젝트를 실행하면 application/logs 폴더 안에 로그 파일이 생성된다.
 
 ### 2.로그 확인
 log파일이 생성되지 않는다면 폴더의 퍼미션을 변경해주면 된다.
+
 ```bash
 sudo chmod 777 . 	// logs 디렉토리 안헤서 실행시킨다.
 ```
 
 리눅스와 OSX에서는 tail - f를 사용하면 실시간으로 로그를 확인할 수 있다.
+
 ```bash
 tail -f log파일.php 
 tail -f log파일.php | grep file 	// file이 포함된 로그만 보여줌
@@ -101,7 +108,9 @@ log_message('DEBUG','main 초기화');
 첫번째 파라미터에 넣을 수 있는 값을 ERROR, DEBUG, INFO가 있다.
 
 #### 1.ERROR : PHP 에러나 사용자 에러등 진짜 에러 메시지
+
 #### 2.DEBUG : 디버그를 도와주는 메세지. 예를 들어, 클래스가 초기화되면 당신은 debugging 정보로 파일에 기록할 수 있다.
+
 #### 3.INFO : 가장 우선순위가 낮은 메세지. 단순히 어떤 프로세스에 대한 메세지를 제공
 
 ### 참고
