@@ -9,14 +9,14 @@ date: 2016-05-27
 
 ## Features
 
-###* 고은 (Go Eun)
+### * 고은 (Go Eun)
 
-###* 24살, 웹 개발자
+### * 24살, 웹 개발자
 
-###* 사용언어
+### * 사용언어
 
-####- APM (Apache + PHP + MySQL)
+#### - APM (Apache + PHP + MySQL)
 
-####- HTML, css
+#### - HTML, css
 
-####- JavaScript(Jquery)
+#### - JavaScript(Jquery)
