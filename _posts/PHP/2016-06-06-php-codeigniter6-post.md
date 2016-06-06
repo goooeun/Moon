@@ -78,9 +78,13 @@ $config['log_threshold'] = 0;
 숫자를 변경하여 로깅 상태를 변경할 수 있다.
 
 #### -0: 로깅 하지 않는다  
+
 #### -1: 에러만 출력  
+
 #### -2: Debug Message  
+
 #### -3: Informaion Message  
+
 #### -4: 모든 메세지
 
 로그를 실행시킨 뒤 프로젝트를 실행하면 application/logs 폴더 안에 로그 파일이 생성된다.
@@ -101,6 +105,7 @@ tail -f log파일.php | grep file 	// file이 포함된 로그만 보여줌
 
 ### 3.로그 이용
 사용자가 직접 로그 메세지를 넣어주고 싶을 땐 소스의 원하는 부분에 log_message함수를 삽입해주면된다.
+
 ```php
 log_message('DEBUG','main 초기화');
 ```
