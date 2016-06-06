@@ -30,6 +30,7 @@ comments: true
 database.php에서 데이터베이스와 연결되는 부분인 hostname, username, password, database 부분은 버전 관리시 오픈소스로 공개되면 보안이 취약해져 정보 유출의 위험이 있다. 이런 부분은 보안상의 이유로 버전 관리에 포함하면 안된다.
 
 .gitignore 파일 안에 내용을 추가해준 후 버전 관리 해준다.
+
 ```bash
 /application/config/database.php
 ```
@@ -52,10 +53,10 @@ $_SERVER['CI_ENV']는 .htaccess이나 아파치의 경우 SetEnv를 사용해서
 $config['language']    = 'english';		// 언어를 설정
 $config['enable_hooks'] = FALSE;		// hook 기능을 활성화
 $config['subclass_prefix'] = 'MY_';		// Core 클래스를 상속 받아 커스터마이징 할 때 클래스 이름의 약속된 접두사를 변경
-$config['log_threshold'] = 0;			// 로그 상태 변경 
-										// 0: 로깅 하지 않는다  1: 에러만 출력  2: Debug Message  3: Informaion Message  4: 모든 메세지
-$config['log_path'] = '';				// 로그 파일을 저장 위치 지정
-$config['cache_path'] = '';				// 캐쉬 파일을 저장 위치 지정
+$config['log_threshold'] = 0;		// 로그 상태 변경 
+									// 0: 로깅 하지 않는다  1: 에러만 출력  2: Debug Message  3: Informaion Message  4: 모든 메세지
+$config['log_path'] = '';		// 로그 파일을 저장 위치 지정
+$config['cache_path'] = '';		// 캐쉬 파일을 저장 위치 지정
 ```
 
 ### 5.설정 정보의 사용
