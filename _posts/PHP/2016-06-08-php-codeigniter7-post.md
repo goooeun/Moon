@@ -93,5 +93,6 @@ $this->session->flashdata('item');		// 플래시 데이터 출력
 
 ### 참고
 > http://www.opentutorials.org/course/697/3982 생활코딩
+
 > http://www.ciboard.co.kr/user_guide/kr/libraries/sessions.html 한국 사용자 포럼
 
