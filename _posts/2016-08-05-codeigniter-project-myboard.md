@@ -1,11 +1,12 @@
 ---
-layout: project
+layout: post
 title:  "[Codeigniter] 게시판"
 date:   2016-08-05
 tag:
 - Codeigniter
 - Board
 - 게시판
+project : true
 comments: true
 ---
 
